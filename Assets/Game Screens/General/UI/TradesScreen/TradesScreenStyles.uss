@@ -1,0 +1,83 @@
+:root {
+    /*COLORS*/
+    --color-main: rgb(250, 222, 127);
+    --color-header: rgb(233, 186, 76);
+    --color-green: rgb(65, 100, 45);
+    --color-red: rgb(169, 67, 37);
+    --color-gray: rgb(40, 40, 40);
+    
+    --background-color-panel-border-main: rgb(180, 120, 70);
+    --background-color-panel-border-light: rgb(211, 183, 129);
+    --background-color-main: rgb(221, 136, 57);
+    --background-color-dark: rgb(87, 57, 33);
+    --background-color-light: rgb(205, 158, 94);
+    --background-color-header: rgb(65, 42, 24);
+    --background-color-button-light: rgb(235, 217, 184);
+    --background-color-button-uneveilable: rgb(93, 103, 85);
+
+    --border-color-gray: rgb(40, 40, 40);
+    --border-color-light: rgb(177, 136, 71);
+    
+    
+    /*ELEMENTS SIZES*/
+    --width-icon-s: 48px;
+    --width-icon-m: 72px;
+    --width-icon-l: 96px;
+    --height-icon-s: var(--width-icon-s);
+    --height-icon-m: var(--width-icon-m);
+    --height-icon-l: var(--width-icon-l);
+    
+    --width-flag: 180px;
+    --height-flag: 120px;
+
+    --height-header-m: 100px;
+    --height-header-l: 130px;
+
+    --width-button-s: 140px;
+    --height-button-s: 60px;
+    --border-radius-button-s: 12px;
+    --border-width-button-s: 4px;
+    --border-bottom-width-button-s: 8px;
+
+    --width-button-m: 240px;
+    --height-button-m: 90px;
+    --border-radius-button-m: 16px;
+    --border-width-button-m: 6px;
+    --border-bottom-width-button-m: 12px;
+
+    --width-button-l: 425px;
+    --height-button-l: 120px;
+    --border-radius-button-l: 16px;
+    --border-width-button-l: 6px;
+    --border-bottom-width-button-l: 12px;
+
+    --border-radius-outer-l: 32px;
+    --border-radius-inner-l: 24px;
+    --border-radius-header-m: 18px;
+
+    --border-width-m: 4px;
+    --border-bottom-width-m: 8px;
+    --border-width-l: 6px;
+    --border-bottom-width-l: 8px;
+    
+    
+    /*SPACINGS*/
+    --padding-panel-border-l: 12px;
+    --padding-panel-border-m: 8px;
+    --padding-panel-m: 16px;
+    --padding-header-m: 0 20px;
+    
+    
+    /*FONTS*/
+    --text-outline-color-main: rgb(40, 40, 40);
+    --text-outline-width-m: 2px;
+    --text-outline-width-l: 3px;
+    --font-size-s: 36px;
+    --font-size-m: 52px;
+    --font-size-l: 58px;
+    --font-size-xl: 72px;
+    
+    --font-main-regular: url("project://database/Assets/Fonts/Oswald-Regular%20SDF.asset?fileID=11400000&guid=2c333a8c5a1c3a143bbcbaffc92bdb56&type=2#Oswald-Regular SDF");
+    --font-main-bold: url("project://database/Assets/Fonts/Oswald-Bold%20SDF.asset?fileID=11400000&guid=f441b029c3e323a4dbc3b82dbc888659&type=2#Oswald-Bold SDF");
+    --font-main-light: url("project://database/Assets/Fonts/Oswald-Light%20SDF.asset?fileID=11400000&guid=98b0dba5d3f40cc41b09e865942e65e8&type=2#Oswald-Light SDF");
+}

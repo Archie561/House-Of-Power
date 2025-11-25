@@ -27,8 +27,10 @@ public class NavigationBarController : MonoBehaviour
         }
 
         InitializeNavigationButtons();
-        UpdateSelectedButton(_buttonScreenMap.FirstOrDefault(x => x.Value == _screenConfigsDatabase.DefaultGameScreen).Key);
     }
+
+    //Гарантує, що кнопка , відповідна екрану за замовчуванням, буде вибрана тільки після того як всі OnEnable завершаться.
+    private void Start() => UpdateSelectedButton(_buttonScreenMap.FirstOrDefault(x => x.Value == _screenConfigsDatabase.DefaultGameScreen).Key);
 
     private void InitializeNavigationButtons()
     {

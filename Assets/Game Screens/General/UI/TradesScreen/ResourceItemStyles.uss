@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.resource-item {
+    flex-direction: row;
+    align-items: flex-end;
+    width: 100%;
+    color: var(--color-main);
+    -unity-font-definition: var(--font-main-bold);
+    -unity-text-outline-width: var(--text-outline-width-m);
+    -unity-text-outline-color: var(--text-outline-color-main);
+    margin-bottom: 16px;
+}
+
+.item-icon {
+    height: var(--height-icon-m);
+    width: var(--width-icon-m);
+    flex-shrink: 0;
+    background-image: url("project://database/Assets/Game%20Screens/General/UI/Images/TradesScreen/steel.png?fileID=2800000&guid=ff48b84dba1e0ce49bdfa6e619f80516&type=3#steel");
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.item-info {
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 20px;
+}
+
+.info-top-row {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--font-size-s);
+}
+
+.progress-bar {
+    height: 18px;
+    width: 100%;
+    border-radius: 8px;
+    border-width: 2px;
+    background-color: var(--background-color-header);
+    overflow: hidden;
+    border-color: black;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    width: 50%;
+    border-radius: 6px;
+    background-color: var(--color-green);
+}
+
+.item-button {
+    width: var(--width-button-s);
+    height: var(--height-button-s);
+    background-color: var(--color-green);
+    border-radius: var(--border-radius-button-s);
+    border-width: var(--border-width-button-s);
+    border-bottom-width: var(--border-bottom-width-button-s);
+    border-color: black;
+    justify-content: center;
+    align-items: center;
+}
+
+.plus-icon {
+    height: 60%;
+    width: 60%;
+    -unity-background-scale-mode: scale-to-fit;
+    background-image: url("project://database/Assets/Game%20Screens/General/UI/Images/TradesScreen/plus_icon.png?fileID=2800000&guid=8594927cb545dc24596b3ebabc06de4c&type=3#plus_icon");
+}

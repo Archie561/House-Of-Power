@@ -1,0 +1,24 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:Template name="ResourceItem" src="project://database/Assets/Game%20Screens/General/UI/TradesScreen/ResourceItem.uxml?fileID=9197481963319205126&amp;guid=9910f899865c52e4a864d1a6bc6b28e0&amp;type=3#ResourceItem" />
+    <Style src="project://database/Assets/Game%20Screens/General/UI/TradesScreen/TradesScreenStyles.uss?fileID=7433441132597879392&amp;guid=95b25ed30d6f2644ca823d9545bedb60&amp;type=3#TradesScreenStyles" />
+    <Style src="project://database/Assets/Game%20Screens/General/UI/TradesScreen/ResourcesPanelStyles.uss?fileID=7433441132597879392&amp;guid=cfb35de46b5a02d4c9df70a81b082ec0&amp;type=3#ResourcesPanelStyles" />
+    <ui:VisualElement name="ResourcePanelContainer" class="resource-panel-container">
+        <ui:VisualElement name="ResourcePanelMain" class="resource-panel-main">
+            <ui:VisualElement name="ResourcePanelHeader" class="resource-panel-header">
+                <ui:VisualElement name="HeaderIcon" class="header-icon" />
+                <ui:Label text="RESOURCES:" name="HeaderTitle" class="header-title" />
+                <ui:Label text="5250" name="HeaderValue" class="header-value" />
+                <ui:VisualElement class="spacer" />
+                <ui:Label text="+2/min" name="HeaderRate" class="header-rate" />
+            </ui:VisualElement>
+            <ui:VisualElement name="ResourcePanelContent" class="resource-panel-content">
+                <ui:Instance template="ResourceItem" />
+                <ui:Instance template="ResourceItem" />
+                <ui:Instance template="ResourceItem" />
+                <ui:Instance template="ResourceItem" />
+                <ui:Instance template="ResourceItem" />
+                <ui:Instance template="ResourceItem" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

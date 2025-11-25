@@ -1,0 +1,20 @@
+.trade-resource-item {
+    flex-direction: row;
+    align-items: center;
+}
+
+.res-icon {
+    width: var(--width-icon-l);
+    height: var(--height-icon-l);
+    margin-right: 10px;
+    flex-shrink: 0;
+    -unity-background-scale-mode: scale-to-fit;
+    background-image: url("project://database/Assets/Game%20Screens/General/UI/Images/TradesScreen/minerals.png?fileID=2800000&guid=f2caa8826758b7c4dbf77cbf1848a325&type=3#minerals");
+}
+
+.res-amount {
+    -unity-font-definition: var(--font-main-bold);
+    font-size: var(--font-size-m);
+    margin: 0;
+    padding: 0;
+}

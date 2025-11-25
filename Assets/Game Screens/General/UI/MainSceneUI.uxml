@@ -1,0 +1,25 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="NavigationPanel" src="project://database/Assets/Game%20Screens/General/UI/NavigationPanel.uxml?fileID=9197481963319205126&amp;guid=baa796a8cf1b6d94da43e46f5a91d76a&amp;type=3#NavigationPanel" />
+    <ui:Template name="TradesScreen" src="project://database/Assets/Game%20Screens/General/UI/TradesScreen/TradesScreen.uxml?fileID=9197481963319205126&amp;guid=2b97aa00af7d77847ac3f00d4f457412&amp;type=3#TradesScreen" />
+    <Style src="project://database/Assets/Game%20Screens/General/UI/MainSceneStyles.uss?fileID=7433441132597879392&amp;guid=d5868c4228e84954493afeab591f43cd&amp;type=3#MainSceneStyles" />
+    <ui:VisualElement style="flex-grow: 1; flex-direction: column;">
+        <ui:VisualElement style="flex-grow: 1; justify-content: center;">
+            <ui:Instance template="TradesScreen" name="TradesScreen" />
+        </ui:VisualElement>
+        <ui:VisualElement style="flex-grow: 1; flex-direction: column-reverse;">
+            <ui:Instance template="NavigationPanel" name="NavigationPanel" />
+        </ui:VisualElement>
+        <ui:VisualElement name="MapScreen" class="hidden">
+            <ui:Label text="Map Screen" style="font-size: 100px;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="EconomyScreen" class="hidden">
+            <ui:Label text="Economy Screen" style="font-size: 100px;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="ShopScreen" class="hidden">
+            <ui:Label text="Shop Screen" style="font-size: 100px;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="LawsScreen" class="hidden">
+            <ui:Label text="Laws Screen" style="font-size: 100px;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

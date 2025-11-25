@@ -9,7 +9,7 @@ public class GameScreenController : MonoBehaviour
     [SerializeField] private GameScreenConfigDatabase _screenConfigsDatabase;
     [SerializeField] private NavigationBarController _navigationBarController;
 
-    private const string HiddenScreenClassName = "game-screen-hidden";
+    private const string HiddenClassName = "hidden";
 
     private VisualElement _root;
     private Dictionary<GameScreen, VisualElement> _screenElementsMap;
@@ -51,9 +51,9 @@ public class GameScreenController : MonoBehaviour
         foreach (var pair in _screenElementsMap)
         {
             if (pair.Key == gameScreenType)
-                pair.Value.RemoveFromClassList(HiddenScreenClassName);
+                pair.Value.RemoveFromClassList(HiddenClassName);
             else
-                pair.Value.AddToClassList(HiddenScreenClassName);
+                pair.Value.AddToClassList(HiddenClassName);
         }
     }
 

@@ -1,0 +1,33 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="TradeResourceItem" src="project://database/Assets/Game%20Screens/General/UI/TradesScreen/TradeResourceItem.uxml?fileID=9197481963319205126&amp;guid=bbae1b5eecc174d48887b6a74fccf16a&amp;type=3#TradeResourceItem" />
+    <Style src="project://database/Assets/Game%20Screens/General/UI/TradesScreen/TradesScreenStyles.uss?fileID=7433441132597879392&amp;guid=95b25ed30d6f2644ca823d9545bedb60&amp;type=3#TradesScreenStyles" />
+    <Style src="project://database/Assets/Game%20Screens/General/UI/TradesScreen/SignOfferPopupStyles.uss?fileID=7433441132597879392&amp;guid=c5dbc5d4c90fef340910d745ba9dbd7d&amp;type=3#SignOfferPopupStyles" />
+    <ui:VisualElement name="SignOfferPopup" class="popup-root">
+        <ui:VisualElement class="popup-content-wrapper">
+            <ui:VisualElement name="PopupHeaderBorder" class="header-border">
+                <ui:VisualElement name="PopupHeader" class="popup-header">
+                    <ui:Label text="SIGN AN OFFER" name="TitleLabel" class="header-title" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="PopupBody" class="popup-body">
+                <ui:Label name="DescriptionLabel" text="Poland proposes a deal" class="description-label label-bold" />
+                <ui:Label name="ImportLabel" text="You'll get:" class="description-label"/>
+                <ui:VisualElement name="ImportList" class="resources-list import-list">
+                    <ui:Instance template="TradeResourceItem" />
+                    <ui:Instance template="TradeResourceItem" />
+                    <ui:Instance template="TradeResourceItem" />
+                </ui:VisualElement>
+                <ui:Label name="ExportLabel" text="You'll give:" class="description-label"/>
+                <ui:VisualElement name="ExportList" class="resources-list export-list">
+                    <ui:Instance template="TradeResourceItem" />
+                    <ui:Instance template="TradeResourceItem" />
+                    <ui:Instance template="TradeResourceItem" />
+                </ui:VisualElement>
+                <ui:VisualElement class="buttons-row">
+                    <ui:Button name="ConfirmButton" text="Confirm" class="popup-button confirm"/>
+                    <ui:Button name="DeclineButton" text="Decline" class="popup-button decline"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

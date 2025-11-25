@@ -1,0 +1,24 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Game%20Screens/General/UI/TradesScreen/TradesScreenStyles.uss?fileID=7433441132597879392&amp;guid=95b25ed30d6f2644ca823d9545bedb60&amp;type=3#TradesScreenStyles" />
+    <Style src="project://database/Assets/Game%20Screens/General/UI/TradesScreen/NewTradesUpdatePopupStyles.uss?fileID=7433441132597879392&amp;guid=8c8dcf0e0e3ed5c4497fd14f9401ed29&amp;type=3#NewTradesUpdatePopupStyles" />
+    <ui:VisualElement name="TradesUpdatePopup" class="popup-root">
+        <ui:VisualElement class="popup-content-wrapper">
+            <ui:VisualElement name="PopupHeaderBorder" class="header-border">
+                <ui:VisualElement name="PopupHeader" class="popup-header">
+                    <ui:Label text="NEW TRADES UPDATE" name="TitleLabel" class="header-title" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="PopupBody" class="popup-body">
+                <ui:Label name="DescriptionLabel" text="Wait to update the list of deals&#10;or buy the update instantly" class="description-label" />
+                <ui:VisualElement class="timer-container">
+                    <ui:VisualElement class="timer-icon" />
+                    <ui:Label name="TimerLabel" text="5:15" class="timer-label" />
+                </ui:VisualElement>
+                <ui:Button name="CostButton" class="cost-button">
+                    <ui:VisualElement name="CostIcon" class="cost-icon" />
+                    <ui:Label name="CostAmount" text="15" class="cost-label" />
+                </ui:Button>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

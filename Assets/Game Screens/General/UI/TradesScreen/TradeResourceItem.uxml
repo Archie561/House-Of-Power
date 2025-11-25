@@ -1,0 +1,8 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Game%20Screens/General/UI/TradesScreen/TradesScreenStyles.uss?fileID=7433441132597879392&amp;guid=95b25ed30d6f2644ca823d9545bedb60&amp;type=3#TradesScreenStyles" />
+    <Style src="project://database/Assets/Game%20Screens/General/UI/TradesScreen/TradeResourceItemStyles.uss?fileID=7433441132597879392&amp;guid=25e34cf34d77f67478fd865ee2baeedf&amp;type=3#TradeResourceItemStyles" />
+    <ui:VisualElement class="trade-resource-item">
+        <ui:VisualElement name="ResIcon" class="res-icon" />
+        <ui:Label name="ResAmount" text="+1" class="res-amount" />
+    </ui:VisualElement>
+</ui:UXML>

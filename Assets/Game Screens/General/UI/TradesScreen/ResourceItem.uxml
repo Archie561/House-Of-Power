@@ -1,0 +1,19 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Game%20Screens/General/UI/TradesScreen/TradesScreenStyles.uss?fileID=7433441132597879392&amp;guid=95b25ed30d6f2644ca823d9545bedb60&amp;type=3#TradesScreenStyles" />
+    <Style src="project://database/Assets/Game%20Screens/General/UI/TradesScreen/ResourceItemStyles.uss?fileID=7433441132597879392&amp;guid=7151dd640428d844bb8a20a06ef88092&amp;type=3#ResourceItemStyles" />
+    <ui:VisualElement name="ResourceItem" class="resource-item">
+        <ui:VisualElement name="ItemIcon" class="item-icon" />
+        <ui:VisualElement name="ItemInfo" class="item-info">
+            <ui:VisualElement name="InfoTopRow" class="info-top-row">
+                <ui:Label name="ItemName" text="Resource Name" class="item-name" />
+                <ui:Label name="ItemProgressText" text="0/0" class="item-progress-text" />
+            </ui:VisualElement>
+            <ui:VisualElement name="ProgressBar" class="progress-bar">
+                <ui:VisualElement name="ProgressBarFill" class="progress-bar-fill" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:Button name="ItemButton" class="item-button">
+            <ui:VisualElement name="PlusIcon" class="plus-icon"/>
+        </ui:Button>
+    </ui:VisualElement>
+</ui:UXML>

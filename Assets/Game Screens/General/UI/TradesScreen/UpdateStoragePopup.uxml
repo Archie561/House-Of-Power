@@ -1,0 +1,31 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Game%20Screens/General/UI/TradesScreen/TradesScreenStyles.uss?fileID=7433441132597879392&amp;guid=95b25ed30d6f2644ca823d9545bedb60&amp;type=3#TradesScreenStyles" />
+    <Style src="project://database/Assets/Game%20Screens/General/UI/TradesScreen/UpdateStoragePanelStyles.uss?fileID=7433441132597879392&amp;guid=54bbaaa1756a1a64d86101bfdb069109&amp;type=3#UpdateStoragePopupStyles" />
+    <ui:VisualElement name="UpdateStoragePopup" class="popup-root">
+        <ui:VisualElement class="popup-content-wrapper">
+            <ui:VisualElement name="PopupHeaderBorder" class="header-border">
+                <ui:VisualElement name="PopupHeader" class="popup-header">
+                    <ui:Label text="UPDATE STORAGE" name="TitleLabel" class="header-title" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="PopupBody" class="popup-body">
+                <ui:Label name="DescriptionLabel" text="You will increase the capacity&#10;of the wood storage:" class="description-label" />
+                <ui:VisualElement class="value-change-container">
+                    <ui:Label name="OldValueLabel" text="400" class="value-label" />
+                    <ui:VisualElement class="arrow-icon" />
+                    <ui:Label name="NewValueLabel" text="500" class="value-label" />
+                </ui:VisualElement>
+                <ui:VisualElement class="buttons-row">
+                    <ui:Button name="CostButton1" class="cost-button">
+                        <ui:VisualElement name="CostIcon1" class="cost-icon" />
+                        <ui:Label name="CostAmount1" text="500" class="cost-label" />
+                    </ui:Button>
+                    <ui:Button name="CostButton2" class="cost-button">
+                        <ui:VisualElement name="CostIcon2" class="cost-icon" />
+                        <ui:Label name="CostAmount2" text="15" class="cost-label" />
+                    </ui:Button>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

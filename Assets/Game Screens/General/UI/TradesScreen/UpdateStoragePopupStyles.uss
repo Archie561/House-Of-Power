@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.popup-root {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-content-wrapper {
+    width: 90%;
+    flex-direction: column;
+    -unity-font-definition: var(--font-main-regular);
+}
+
+.header-border {
+    background-color: var(--background-color-panel-border-main);
+    padding: var(--padding-panel-border-l);
+    border-radius: var(--border-radius-outer-l);
+    border-color: var(--border-color-gray);
+    border-width: var(--border-width-l);
+}
+
+.popup-header {
+    background-color: var(--background-color-header);
+    height: var(--height-header-l);
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--border-radius-inner-l);
+    border-color: var(--border-color-gray);
+    border-width: var(--border-width-l);
+}
+
+.header-title {
+    color: var(--color-header);
+    font-size: var(--font-size-xl);
+    -unity-text-outline-width: var(--text-outline-width-l);
+    -unity-text-outline-color: var(--text-outline-color-main);
+    -unity-font-definition: var(--font-main-bold);
+}
+
+.popup-body {
+    background-color: var(--background-color-main);
+    border-color: var(--border-color-gray);
+    border-width: var(--border-width-m);
+    border-top-width: 0;
+    border-bottom-left-radius: var(--border-radius-inner-l);
+    border-bottom-right-radius: var(--border-radius-inner-l);
+    padding: var(--padding-panel-m);
+    align-items: center;
+    margin: 0 30px;
+}
+
+.description-label {
+    color: var(--color-gray);
+    font-size: var(--font-size-l);
+    -unity-text-align: middle-center;
+    white-space: normal;
+}
+
+.value-change-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.value-label {
+    color: var(--color-main);
+    font-size: var(--font-size-xl);
+    -unity-text-outline-width: var(--text-outline-width-m);
+    -unity-text-outline-color: black;
+    -unity-font-definition: var(--font-main-bold);
+}
+
+.arrow-icon {
+    width: var(--width-icon-m);
+    height: var(--height-icon-m);
+    background-image: url("project://database/Assets/Game%20Screens/General/UI/Images/TradesScreen/update_icon.png?fileID=2800000&guid=f008be00ed7f3b541ab8c5f42046dd57&type=3#update_icon");
+    -unity-background-scale-mode: scale-to-fit;
+    margin: 0 15px;
+}
+
+.buttons-row {
+    width: 100%;
+    flex-direction: row;
+}
+
+.cost-button {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    flex-basis: 0;
+    height: var(--height-button-l);
+    border-radius: var(--border-radius-button-l);
+    border-width: var(--border-width-button-l);
+    border-bottom-width: var(--border-bottom-width-button-l);
+    background-color: var(--background-color-button-light);
+    border-color: var(--border-color-gray);
+}
+
+.cost-icon {
+    width: var(--width-icon-s);
+    height: var(--height-icon-s);
+    margin-right: 10px;
+    -unity-background-scale-mode: scale-to-fit;
+    background-image: url("project://database/Assets/Game%20Screens/General/UI/Images/TradesScreen/diamonds_icon.png?fileID=2800000&guid=31cdf48f24038f94d9389ec0e24d8279&type=3#diamonds_icon");
+}
+
+.cost-label {
+    color: var(--color-gray);
+    font-size: var(--font-size-l);
+    -unity-font-definition: var(--font-main-bold);
+}
+
+#CostButton1 {
+    margin-right: 10px;
+}
+
+#CostButton2 {
+    margin-left: 10px;
+}

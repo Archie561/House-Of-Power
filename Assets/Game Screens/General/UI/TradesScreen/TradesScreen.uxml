@@ -1,0 +1,15 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:Template name="OffersPanel" src="project://database/Assets/Game%20Screens/General/UI/TradesScreen/OffersPanel.uxml?fileID=9197481963319205126&amp;guid=79798ccdb95f8e648959debb9c4d8175&amp;type=3#OffersPanel" />
+    <ui:Template name="ResourcesPanel" src="project://database/Assets/Game%20Screens/General/UI/TradesScreen/ResourcesPanel.uxml?fileID=9197481963319205126&amp;guid=d0ab6e45c1b35724d901994972d82cca&amp;type=3#ResourcesPanel" />
+    <Style src="project://database/Assets/Game%20Screens/General/UI/TradesScreen/TradesScreenStyles.uss?fileID=7433441132597879392&amp;guid=95b25ed30d6f2644ca823d9545bedb60&amp;type=3#TradesScreenStyles" />
+    <ui:VisualElement name="Root" style="flex-grow: 1; align-items: center;">
+        <ui:VisualElement name="Container" style="width: 90%; justify-content: space-around; height: 90%;">
+            <ui:VisualElement style="flex-grow: 1; margin-top: 60px;">
+                <ui:Instance template="OffersPanel" />
+            </ui:VisualElement>
+            <ui:VisualElement style="flex-grow: 1; display: none;">
+                <ui:Instance template="ResourcesPanel" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

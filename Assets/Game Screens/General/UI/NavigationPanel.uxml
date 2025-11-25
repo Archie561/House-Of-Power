@@ -1,0 +1,40 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Style src="NavigationPanelStyles.uss" />
+    <ui:VisualElement name="NavigationPanel" class="navigation-panel">
+        <ui:Button name="MapNavigationButton" data-source="project://database/Assets/Game%20Screens/General/ScriptableObjects/MapScreenConfig.asset?fileID=11400000&amp;guid=375cea8d2407f7143a3e22dd63523af0&amp;type=2#MapScreenConfig" class="navigation-button">
+            <ui:VisualElement name="MapIcon" class="navigation-button-icon">
+                <Bindings>
+                    <ui:DataBinding property="style.backgroundImage" data-source-path="ButtonIcon" binding-mode="ToTarget" />
+                </Bindings>
+            </ui:VisualElement>
+        </ui:Button>
+        <ui:Button name="EconomyNavigationButton" data-source="project://database/Assets/Game%20Screens/General/ScriptableObjects/EconomyScreenConfig.asset?fileID=11400000&amp;guid=2a1963cb9e24c264cbc52dbf59bbb929&amp;type=2#EconomyScreenConfig" class="navigation-button">
+            <ui:VisualElement name="EconomyIcon" class="navigation-button-icon">
+                <Bindings>
+                    <ui:DataBinding property="style.backgroundImage" data-source-path="ButtonIcon" binding-mode="ToTarget" />
+                </Bindings>
+            </ui:VisualElement>
+        </ui:Button>
+        <ui:Button name="ShopNavigationButton" data-source="project://database/Assets/Game%20Screens/General/ScriptableObjects/ShopScreenConfig.asset?fileID=11400000&amp;guid=2cc16c1021cce334c87581831018309f&amp;type=2#ShopScreenConfig" class="navigation-button">
+            <ui:VisualElement name="ShopIcon" class="navigation-button-icon">
+                <Bindings>
+                    <ui:DataBinding property="style.backgroundImage" data-source-path="ButtonIcon" binding-mode="ToTarget" />
+                </Bindings>
+            </ui:VisualElement>
+        </ui:Button>
+        <ui:Button name="TradesNavigationButton" data-source="project://database/Assets/Game%20Screens/General/ScriptableObjects/TradesScreenConfig.asset?fileID=11400000&amp;guid=7a7cd45666271b747bff7a61b3f06092&amp;type=2#TradesScreenConfig" class="navigation-button">
+            <ui:VisualElement name="TradesIcon" class="navigation-button-icon">
+                <Bindings>
+                    <ui:DataBinding property="style.backgroundImage" data-source-path="ButtonIcon" binding-mode="ToTarget" />
+                </Bindings>
+            </ui:VisualElement>
+        </ui:Button>
+        <ui:Button name="LawsNavigationButton" data-source="project://database/Assets/Game%20Screens/General/ScriptableObjects/LawsScreenConfig.asset?fileID=11400000&amp;guid=962f91b85ce5a4042a8164f9046bf55a&amp;type=2#LawsScreenConfig" class="navigation-button">
+            <ui:VisualElement name="LawsIcon" class="navigation-button-icon">
+                <Bindings>
+                    <ui:DataBinding property="style.backgroundImage" data-source-path="ButtonIcon" binding-mode="ToTarget" />
+                </Bindings>
+            </ui:VisualElement>
+        </ui:Button>
+    </ui:VisualElement>
+</ui:UXML>

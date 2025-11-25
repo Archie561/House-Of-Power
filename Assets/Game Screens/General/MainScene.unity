@@ -410,7 +410,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NavigationBarController
   _screenConfigsDatabase: {fileID: 11400000, guid: 8ddecc9cafe0707499adc48ebb458b73, type: 2}
-  _defaultScreen: 0
 --- !u!114 &1772772469
 MonoBehaviour:
   m_ObjectHideFlags: 0

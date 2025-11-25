@@ -1,0 +1,28 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <ui:Template name="OfferItem" src="project://database/Assets/Game%20Screens/General/UI/TradesScreen/OfferItem.uxml?fileID=9197481963319205126&amp;guid=a045594696168a3449e402dfa4e20895&amp;type=3#OfferItem" />
+    <Style src="project://database/Assets/Game%20Screens/General/UI/TradesScreen/TradesScreenStyles.uss?fileID=7433441132597879392&amp;guid=95b25ed30d6f2644ca823d9545bedb60&amp;type=3#TradesScreenStyles" />
+    <Style src="project://database/Assets/Game%20Screens/General/UI/TradesScreen/OffersPanelStyles.uss?fileID=7433441132597879392&amp;guid=d5f1c257f4a110941953ddcd8be531e9&amp;type=3#OffersPanelStyles" />
+    <ui:VisualElement name="OffersPanelContainer" class="offers-panel-container">
+        <ui:VisualElement name="OffersPanelMain" class="offers-panel-main">
+            <ui:VisualElement name="OffersPanelHeader" class="offers-panel-header">
+                <ui:Label text="OFFERS" name="HeaderTitle" class="header-title" />
+                <ui:VisualElement class="spacer" />
+                <ui:VisualElement name="HeaderControls" class="header-controls">
+                    <ui:VisualElement name="TimerContainer" class="timer-container">
+                        <ui:VisualElement name="ClockIcon" class="clock-icon" />
+                        <ui:Label name="TimerLabel" text="5:22" class="timer-label" />
+                    </ui:VisualElement>
+                    <ui:Button name="ResetButton" class="reset-button">
+                        <ui:VisualElement name="ResetIcon" class="reset-icon" />
+                    </ui:Button>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:ScrollView name="OffersList" class="offers-list" vertical-scroller-visibility="Hidden">
+                <ui:Instance template="OfferItem" />
+                <ui:Instance template="OfferItem" />
+                <ui:Instance template="OfferItem" />
+                <ui:Instance template="OfferItem" />
+            </ui:ScrollView>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

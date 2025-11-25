@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.offers-panel-container {
+    flex-grow: 1;
+    padding: var(--padding-panel-border-l);
+    background-color: var(--background-color-panel-border-main);
+    border-radius: var(--border-radius-outer-l);
+    border-color: var(--border-color-gray);
+    border-width: var(--border-width-l);
+    -unity-font-definition: var(--font-main-regular);
+}
+
+.offers-panel-main {
+    flex-grow: 1;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: var(--background-color-main);
+    border-radius: var(--border-radius-inner-l);
+    border-color: var(--border-color-gray);
+    border-width: var(--border-width-l);
+}
+
+.offers-panel-header {
+    flex-direction: row;
+    align-items: center;
+    flex-shrink: 0;
+    height: var(--height-header-m);
+    padding: var(--padding-header-m);
+    background-color: var(--background-color-header);
+    border-bottom-width: var(--border-width-l);
+    border-bottom-color: black;
+    color: var(--color-header);
+    -unity-text-outline-color: var(--text-outline-color-main);
+    -unity-text-outline-width: var(--text-outline-width-m);
+    font-size: var(--font-size-l);
+    -unity-font-definition: var(--font-main-bold);
+}
+
+.spacer {
+    flex-grow: 1;
+}
+
+.header-controls {
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+}
+
+.timer-container {
+    flex-direction: row;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.clock-icon {
+    margin-right: 10px;
+    width: var(--width-icon-s);
+    height: var(--height-icon-s);
+    -unity-background-scale-mode: scale-to-fit;
+    background-image: url("project://database/Assets/Game%20Screens/General/UI/Images/TradesScreen/time_icon.png?fileID=2800000&guid=dbc9db6092b67c749bb774002374d3da&type=3#time_icon");
+}
+
+.timer-label {
+    color: var(--color-main);
+    font-size: var(--font-size-m);
+    -unity-text-align: middle-left;
+}
+
+.reset-button {
+    width: var(--width-button-s);
+    height: var(--height-button-s);
+    background-color: var(--background-color-button-uneveilable);
+    border-radius: var(--border-radius-button-s);
+    border-width: var(--border-width-button-s);
+    border-bottom-width: var(--border-bottom-width-button-s);
+    border-color: black;
+    align-items: center;
+    justify-content: center;
+}
+
+.reset-icon {
+    height: 80%;
+    width: 80%;
+    -unity-background-scale-mode: scale-to-fit;
+    background-image: url("project://database/Assets/Game%20Screens/General/UI/Images/TradesScreen/restart_not_active.png?fileID=2800000&guid=a554bf5b7f7079940a43fd8b39a187c9&type=3#restart_not_active");
+}
+
+.offers-list {
+    flex-grow: 1;
+    padding: var(--padding-panel-m);
+}
